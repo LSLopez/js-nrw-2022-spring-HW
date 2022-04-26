@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    </head>
+
+    <body id="h">
+        <!--<input type="text" id="colorInput">-->
+        <h1>I am learning JavaScript</h1>
+        <button onclick="colorChange()">Change color</button>
+        <div id="myDiv">Press the button, you will see the magic</div>
+        <ul id="colorList"></ul>
+        
+    
+        <script src="main.js">
+            function colorChange(){
+                let body=document.getElementById("h");
+                let colors=["grey","green","blue","pink","white","orange","indigo","cyan"];
+                let random=Math.floor(Math.random()*colors.length);
+                let x=document.getElementById("h").style.backgroundColor=colors[random];
+}
+        </script>
+    </body>
+</html>
